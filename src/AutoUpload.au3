@@ -15,7 +15,7 @@ Global Const $LOG_FILE = "log.txt"
 
 ;не запускать повторно
 If _Singleton($APP_NAME, 1) = 0 Then
-    Message("Эта программа уже запущена, должен быть" & @CRLF & "значок в области уведомлений.", $MB_ICONWARNING)
+    Message("Эта программа уже запущена, должен быть" & @CRLF & "значок жёлтой молнии в области уведомлений.", $MB_ICONWARNING)
     Exit
 EndIf
 
@@ -45,6 +45,8 @@ Global $ItemAbout = TrayCreateItem("О программе")
 Global $ItemConfig = TrayCreateItem("Открыть настройки")
 Global $ItemLog = TrayCreateItem("Открыть журнал")
 Global $ItemExit = TrayCreateItem("Выход")
+
+TraySetIcon(@ScriptDir & "\Lightning.ico")
 
 While 1
     Switch TrayGetMsg()
