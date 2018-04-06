@@ -59,3 +59,10 @@
 * Источник: https://www.iconfinder.com/icons/2682840/
 * Автор: [Laura Reen](https://www.iconfinder.com/laurareen)
 * Лицензия: [Creative Commons (Attribution-Noncommercial 3.0 Unported)](http://creativecommons.org/licenses/by-nc/3.0/)
+
+## Инсталлятор
+
+Для сборки инсталлятора нужна [NSIS](http://nsis.sourceforge.net).
+
+* Запустить NSIS-компилятор `makensisw.exe`: Пуск - "NSIS" - "Compile NSI scripts".
+* Загрузить в него скрипт `nsis/AutoUpload.nsi`. В этой же папке появится инсталлятор.
